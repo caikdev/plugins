@@ -1,0 +1,16 @@
+{
+  "name": "caikdev",
+  "owner": { "name": "CAIK" },
+  "metadata": {
+    "description": "CAIK — The package manager for AI agents. Plugins for Claude Code, Cursor, and OpenClaw.",
+    "homepage": "https://caik.dev"
+  },
+  "plugins": [
+    {
+      "name": "caik",
+      "version": "0.1.0",
+      "source": "./claude-code",
+      "description": "Search, install, and share AI artifacts from the CAIK community registry"
+    }
+  ]
+}

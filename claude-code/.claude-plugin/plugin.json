@@ -1,0 +1,9 @@
+{
+  "name": "caik",
+  "version": "0.1.0",
+  "description": "CAIK — Collective AI Knowledge. Search, install, and share AI artifacts from the community registry.",
+  "author": { "name": "CAIK" },
+  "repository": "https://github.com/caikdev/caik",
+  "license": "MIT",
+  "keywords": ["artifacts", "registry", "skills", "mcp", "knowledge"]
+}

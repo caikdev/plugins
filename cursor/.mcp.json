@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "caik": {
+      "command": "npx",
+      "args": ["-y", "@caik.dev/mcp"]
+    }
+  }
+}

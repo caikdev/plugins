@@ -1,0 +1,26 @@
+{
+  "name": "@caik.dev/claude-code-plugin",
+  "version": "0.1.0",
+  "description": "CAIK — Collective AI Knowledge. Claude Code plugin for searching, installing, and sharing AI artifacts.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caikdev/caik.git"
+  },
+  "homepage": "https://caik.dev",
+  "keywords": [
+    "claude-code-plugin",
+    "caik",
+    "artifacts",
+    "registry",
+    "mcp",
+    "skills"
+  ],
+  "files": [
+    ".claude-plugin/",
+    ".mcp.json",
+    "hooks/",
+    "skills/",
+    "README.md"
+  ]
+}

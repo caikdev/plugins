@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "${CURSOR_PLUGIN_ROOT}/hooks/caik-hook.sh session-start"
+      }
+    ],
+    "postToolUse": [
+      {
+        "command": "${CURSOR_PLUGIN_ROOT}/hooks/caik-hook.sh post-tool-use"
+      }
+    ],
+    "stop": [
+      {
+        "command": "${CURSOR_PLUGIN_ROOT}/hooks/caik-hook.sh session-end"
+      }
+    ],
+    "sessionEnd": [
+      {
+        "command": "${CURSOR_PLUGIN_ROOT}/hooks/caik-hook.sh session-end"
+      }
+    ]
+  }
+}
