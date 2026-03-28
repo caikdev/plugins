@@ -15,6 +15,6 @@ Runs when the conversation stops or the session ends. Flushes any buffered contr
 
 ## Notes
 
-- All hooks delegate to `npx -y @caik.dev/cli hook <event>` subcommands via the CLI.
+- All hooks delegate to `npx -y caik-cli hook <event>` subcommands via the CLI.
 - Timeouts are conservative (5-10s) to avoid blocking the user.
 - The CLI is invoked via `npx` so no global install is required.

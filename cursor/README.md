@@ -1,6 +1,6 @@
 # CAIK — Cursor Plugin
 
-Search, install, and share AI artifacts from the [CAIK](https://caik.dev) community registry, directly inside Cursor.
+Search, install, and share AI artifacts from the [CAIK](https://www.caik.dev) community registry, directly inside Cursor.
 
 ## Install
 
@@ -27,5 +27,5 @@ Lifecycle hooks that run automatically:
 
 ## Links
 
-- [caik.dev](https://caik.dev) — Browse the artifact registry
+- [caik.dev](https://www.caik.dev) — Browse the artifact registry
 - [GitHub](https://github.com/caikdev/caik) — Source code

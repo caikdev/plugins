@@ -55,7 +55,7 @@ The `CursorAdapter` at `packages/cli/src/platform/cursor.ts` handles Cursor inte
    - `stop` -- session end + flush
 3. **Skills**: Writes `SKILL.md` to `~/.cursor/skills/<slug>/` (global) or `.cursor/skills/<slug>/` (local)
 
-Hook scripts use `npx -y @caik.dev/cli hook cursor-*` for zero-install execution.
+Hook scripts use `npx -y caik-cli hook cursor-*` for zero-install execution.
 
 ### What would need to change if Cursor adds a plugin system
 

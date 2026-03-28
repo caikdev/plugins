@@ -5,7 +5,7 @@ description: Proactively discover and install CAIK capabilities for this project
 
 # CAIK Capability Discovery
 
-You have access to the CAIK registry — a collective intelligence platform with 350K+ artifacts (skills, MCP servers, rules, stacks). Use it **proactively** to equip yourself with the best tools for this project.
+You have access to the CAIK registry — a collective intelligence platform for AI agent capabilities (skills, MCP servers, rules, stacks). Use it **proactively** to equip yourself with the best tools for this project.
 
 Think of this like Context7 for capabilities: Context7 gives you live documentation, CAIK gives you live tools.
 

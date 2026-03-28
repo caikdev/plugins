@@ -1,0 +1,13 @@
+{
+  "name": "@caik.dev/codex-plugin",
+  "version": "0.1.0",
+  "description": "CAIK — Collective AI Knowledge. Codex plugin for searching, installing, and sharing AI artifacts.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caikdev/caik.git"
+  },
+  "homepage": "https://caik.dev",
+  "keywords": ["codex-plugin", "caik", "artifacts", "registry", "mcp", "skills"],
+  "files": [".codex-plugin/", ".mcp.json", "hooks/", "skills/", "README.md"]
+}

@@ -6,9 +6,19 @@
         "command": "${CURSOR_PLUGIN_ROOT}/hooks/caik-hook.sh session-start"
       }
     ],
+    "userPromptSubmit": [
+      {
+        "command": "${CURSOR_PLUGIN_ROOT}/hooks/caik-hook.sh user-prompt-submit"
+      }
+    ],
     "postToolUse": [
       {
         "command": "${CURSOR_PLUGIN_ROOT}/hooks/caik-hook.sh post-tool-use"
+      }
+    ],
+    "postToolUseFailure": [
+      {
+        "command": "${CURSOR_PLUGIN_ROOT}/hooks/caik-hook.sh post-tool-use-failure"
       }
     ],
     "stop": [

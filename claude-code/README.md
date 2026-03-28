@@ -1,6 +1,6 @@
 # CAIK — Claude Code Plugin
 
-Search, install, and share AI artifacts from the [CAIK](https://caik.dev) community registry, directly inside Claude Code.
+Search, install, and share AI artifacts from the [CAIK](https://www.caik.dev) community registry, directly inside Claude Code.
 
 ## Install
 
@@ -37,6 +37,6 @@ The plugin uses `npx @caik.dev/mcp` for the MCP server and `caik` CLI for hooks.
 
 ## Links
 
-- [caik.dev](https://caik.dev) — Browse the artifact registry
-- [Documentation](https://caik.dev/docs) — Full docs
+- [caik.dev](https://www.caik.dev) — Browse the artifact registry
+- [Documentation](https://www.caik.dev/docs) — Full docs
 - [GitHub](https://github.com/caikdev/caik) — Source code
