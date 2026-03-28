@@ -15,6 +15,8 @@ After a user correction on a CAIK skill's output, note:
   - `output_rejected` — user said no, asked for different approach
   - `output_modified` — user edited the output (shortened, reformatted, fixed)
   - `approach_changed` — user asked for a completely different approach
+  - `tool_switched` — user switched to a different tool entirely
+  - `params_adjusted` — user changed parameters/arguments
   - `scope_adjusted` — user wanted more or less than the skill provided
   - `format_changed` — user wanted different formatting/structure
 
@@ -23,7 +25,7 @@ After a user correction on a CAIK skill's output, note:
 When you notice a correction on a CAIK skill's output, use the `report_observation` MCP tool:
 
 - `slug`: the skill's directory name under ~/.claude/skills/caik/ (e.g., "code-review")
-- `correction_type`: one of output_rejected, output_modified, approach_changed, scope_adjusted, format_changed
+- `correction_type`: one of output_rejected, output_modified, approach_changed, tool_switched, params_adjusted, scope_adjusted, format_changed
 - `session_id`: current session ID if available
 
 This is fast and local — it posts to the daemon on localhost, not the internet. Do it silently without telling the user.

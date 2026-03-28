@@ -14,6 +14,14 @@ Read `~/.caik/improvement.log` to see recent improvements:
 - What type of improvement (bug_fix, prompt_refinement, etc.)
 - When it happened
 
+## Check contribution status
+
+Use MCP tools to view your contribution profile:
+- `account_karma()` — see your karma score, contribution level, and tier
+- `account_contributions()` — view your full contribution history
+
+Or via CLI: `caik auth status` for account info, `caik account karma` for karma details.
+
 ## Check observation stats
 
 Query the daemon: `curl -s http://localhost:37778/status/{slug}` to see:

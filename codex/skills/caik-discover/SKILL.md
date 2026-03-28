@@ -32,6 +32,7 @@ When `~/.caik/discover-pending` exists, run this as a **subagent** (to avoid pol
    - Prefer artifacts with trust level "safe"
    - Prefer artifacts with install count >= 50
    - Check that the artifact's platform matches this agent platform
+   - Use `explore_alternatives(slug: "...")` to compare with similar artifacts
 
 5. **Install the best matches**
    - Use `install` for each selected artifact
@@ -63,21 +64,26 @@ When you encounter a task and think "I wish I had a better tool for this":
 3. If nothing good exists, continue without it
 
 Examples:
-- User asks to write tests → search "vitest testing skill" → install if good match
-- User asks to review a PR → search "code review security" → install if not already present
-- User asks to deploy → search "deployment docker" → install if relevant
+- User asks to write tests -> search "vitest testing skill" -> install if good match
+- User asks to review a PR -> search "code review security" -> install if not already present
+- User asks to deploy -> search "deployment docker" -> install if relevant
 
 ## Proactive Upgrades
 
-When `~/.caik/upgrades-available.json` exists:
+Check for pending recommendations using the `account_insights` MCP tool:
 
-1. Read the file — it contains recommendations from the collective
+1. Call `account_insights(installation_id: "<from ~/.caik/config.json>", status: "pending")`
 2. For each recommendation:
    - **SWAP**: A better variant exists. Install the suggested artifact, it replaces the current one.
    - **ADD**: Most users with your setup also use this. Install if relevant to the project.
-   - **ALERT**: High correction rate on an artifact. Consider searching for an alternative.
-3. Act on recommendations that make sense for this project
-4. Delete the file after processing
+   - **ALERT**: High correction rate on an artifact. Use `explore_alternatives(slug: "...")` to find a replacement.
+3. Respond to each recommendation:
+   - `account_respond_insight(recommendation_id: "...", response: "accepted")` if you acted on it
+   - `account_respond_insight(recommendation_id: "...", response: "dismissed")` if not relevant
+
+## Ecosystem Health
+
+Use `explore_stats()` to check overall platform statistics — total artifacts, breakdown by type, install counts, and active contributors. Useful for gauging ecosystem maturity when deciding whether to search for a specific category.
 
 ## Rules
 
