@@ -14,7 +14,7 @@ Search, install, and share AI artifacts from the [CAIK](https://www.caik.dev) co
 ### MCP Tools
 The plugin registers a CAIK MCP server that provides tools for searching, installing, and contributing artifacts without leaving your conversation:
 - `search` — Find skills, rules, prompts, MCP servers, and knowledge packs
-- `install_artifact` — Install an artifact into your project
+- `install` — Install an artifact into your project
 - `report_outcome` — Share how well an artifact worked (earns karma)
 
 ### Skills

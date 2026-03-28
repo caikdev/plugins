@@ -14,10 +14,10 @@ When the CAIK MCP server is running, these tools are available:
 | Tool | Description |
 |------|-------------|
 | `search` | Search the CAIK registry for artifacts |
-| `get_artifact` | Get full details for an artifact by slug |
-| `install_artifact` | Get install instructions for an artifact |
+| `show` | Get full details for an artifact by slug |
+| `install` | Get install instructions for an artifact |
 | `report_outcome` | Report whether an artifact worked (success: true/false) |
-| `submit_review` | Upvote or downvote an artifact |
+| `review` | Upvote or downvote an artifact |
 
 ## Quick Commands
 
@@ -25,13 +25,13 @@ If MCP is unavailable, use the CLI directly:
 
 - **Search:** `caik search <query>`
 - **Install:** `caik install <slug>`
-- **Status:** `caik status`
+- **Status:** `caik auth status`
 - **Update:** `caik update [slug]`
 - **Uninstall:** `caik uninstall <slug>`
 
 ## Contributing Back
 
-When an artifact works well for a task, use `report_outcome(artifact_slug="...", success=true)` or `submit_review(artifact_slug="...", vote="up")` to help the community. Your contributions earn karma on the CAIK leaderboard.
+When an artifact works well for a task, use `report_outcome(artifact_slug="...", success=true)` or `review(artifact_slug="...", vote="up")` to help the community. Your contributions earn karma on the CAIK leaderboard.
 
 ## Discovery
 

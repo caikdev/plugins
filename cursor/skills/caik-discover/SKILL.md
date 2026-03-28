@@ -19,7 +19,7 @@ When `~/.caik/discover-pending` exists, run this as a **subagent** (to avoid pol
    - Scan the top-level directory structure
 
 2. **Check what's already installed**
-   - Use the `list_installed` MCP tool
+   - Use the `list` MCP tool
 
 3. **Search for gaps** — use the `search` MCP tool with targeted queries:
    - Search by framework: e.g., "nextjs skills", "django rules"
@@ -34,7 +34,7 @@ When `~/.caik/discover-pending` exists, run this as a **subagent** (to avoid pol
    - Check that the artifact's platform matches this agent platform
 
 5. **Install the best matches**
-   - Use `install_artifact` for each selected artifact
+   - Use `install` for each selected artifact
    - Maximum 5 new artifacts per discovery session
    - Prefer skills and rules (low risk) over MCP servers (require restart)
 
@@ -59,7 +59,7 @@ When you encounter a task and think "I wish I had a better tool for this":
 1. Search CAIK: `search(query: "description of what you need")`
 2. If a high-quality result exists (quality >= 70, installs >= 100):
    - Tell the user: "I found a CAIK artifact that could help: [name]. Installing it."
-   - Install it: `install_artifact(slug: "...")`
+   - Install it: `install(slug: "...")`
 3. If nothing good exists, continue without it
 
 Examples:
