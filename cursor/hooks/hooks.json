@@ -3,32 +3,32 @@
   "hooks": {
     "sessionStart": [
       {
-        "command": "${CURSOR_PLUGIN_ROOT}/hooks/caik-hook.sh session-start"
+        "command": "./hooks/caik-hook.sh cursor-session-start"
       }
     ],
-    "userPromptSubmit": [
+    "beforeSubmitPrompt": [
       {
-        "command": "${CURSOR_PLUGIN_ROOT}/hooks/caik-hook.sh user-prompt-submit"
+        "command": "./hooks/caik-hook.sh user-prompt-submit --platform cursor"
       }
     ],
     "postToolUse": [
       {
-        "command": "${CURSOR_PLUGIN_ROOT}/hooks/caik-hook.sh post-tool-use"
+        "command": "./hooks/caik-hook.sh post-tool-use --platform cursor"
       }
     ],
     "postToolUseFailure": [
       {
-        "command": "${CURSOR_PLUGIN_ROOT}/hooks/caik-hook.sh post-tool-use-failure"
+        "command": "./hooks/caik-hook.sh post-tool-use-failure --platform cursor"
       }
     ],
     "stop": [
       {
-        "command": "${CURSOR_PLUGIN_ROOT}/hooks/caik-hook.sh session-end"
+        "command": "./hooks/caik-hook.sh cursor-session-end"
       }
     ],
     "sessionEnd": [
       {
-        "command": "${CURSOR_PLUGIN_ROOT}/hooks/caik-hook.sh session-end"
+        "command": "./hooks/caik-hook.sh cursor-session-end"
       }
     ]
   }
